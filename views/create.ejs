@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Event</title>
+    <link
+      href="/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link href="/css/bootstrap-datepicker.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-lg-8 col-lg-offset-2">
+          <h2>Adding records</h2>
+          <hr />
+          <form method="post" action="/account">
+            <div class="form-group">
+              <label for="item">Event</label>
+              <input
+                name = "title"
+                type="text"
+                class="form-control"
+                id="item"
+              />
+            </div>
+            <div class="form-group">
+              <label for="time">Event Date</label>
+              <input
+                name= "time"
+                type="text"
+                class="form-control"
+                id="time"
+              />
+            </div>
+            <div class="form-group">
+              <label for="type">Type</label>
+              <select name = "type" class="form-control" id="type">
+                <option value="-1">Expense</option>
+                <option value="1">Income</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="account">Amount</label>
+              <input
+                name="amount"
+                type="text"
+                class="form-control"
+                id="account"
+              />
+            </div>
+            
+            <div class="form-group">
+              <label for="remarks">Remarks</label>
+              <textarea name ="remarks"  class="form-control" id="remarks"></textarea>
+            </div>
+            <hr>
+            <button type="submit" class="btn btn-primary btn-block">Add</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap-datepicker.min.js"></script>
+    <script src="/js/main.js"></script>
+    
+  </body>
+</html>
