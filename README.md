@@ -6,13 +6,13 @@ Final Version shows:
 
 
 # How to run in your local environment  
-Download project  
+*Download project  
 
-Run "npm i" to install all dependencies you need   
+*Run "npm i" to install all dependencies you need  
 
-Run "npm start" to run the whole project  
+*Run "npm start" to run the whole project  
 
-Input "http://localhost:3000/account" in your browser to enjoy this!  
+*Input "http://localhost:3000/account" in your browser to enjoy this!  
 
-Done!
+*Done!
 
