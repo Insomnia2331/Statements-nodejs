@@ -11,13 +11,13 @@ Changes:
 
 
 # How to run in your local environment  
-*Download project  
+* Download project  
 
-*Run "npm i" in your terminal or CMD to install all dependencies you need  
+* Run "npm i" in your terminal or CMD to install all dependencies you need  
 
-*Run "npm start" in your terminal or CMD to run the whole project  
+* Run "npm start" in your terminal or CMD to run the whole project  
 
-*Input "http://localhost:3000/account" in your browser to enjoy this!  
+* Input "http://localhost:3000/account" in your browser to enjoy this!  
 
-*Done!
+* Done!
 
