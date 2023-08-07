@@ -1,9 +1,9 @@
 # Node.js Statement
 Another version of the Statement app
-Changes:
-* Using MongoDB as a database rather than  using lowdb store in localhost
-*Adding login and signup page
-*Adding session to check if the user login     
+Changes:  
+* Using MongoDB as a database rather than  using lowdb store in localhost  
+*Adding login and signup page  
+*Adding session to check if the user login       
 
   
 
