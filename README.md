@@ -13,7 +13,9 @@ Changes:
 # How to run in your local environment  
 * Download project  
 
-* Run "npm i" in your terminal or CMD to install all dependencies you need  
+* Run "npm i" in your terminal or CMD to install all dependencies you need
+
+* Run mongoDB
 
 * Run "npm start" in your terminal or CMD to run the whole project  
 
