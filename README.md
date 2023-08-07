@@ -1,10 +1,11 @@
 # Node.js Statement
-A small web page written using Node.js technology combined with lowdb as a local database, used for recording daily expenses and income  
-The technology used: Node.js, lowdb, express framework, EJS Template Engine.  
-Users can add or delete their transactions statements according to their needs.    
+Another version of the Statement app
+Changes:
+* Using MongoDB as a database rather than  using lowdb store in localhost
+*Adding login and signup page
+*Adding session to check if the user login     
 
-Final Version shows:  
-![image](https://github.com/Insomnia2331/accounts/assets/103230242/d3c10436-5307-4544-928d-0bec4df5f58e)  
+  
 
 
 # How to run in your local environment  
