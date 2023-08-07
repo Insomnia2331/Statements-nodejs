@@ -29,16 +29,16 @@
           <hr />
           <div class="accounts">
             <% accounts.forEach(item=>{ %>
-            <div class="panel <%= item.type ==='-1' ? 'panel-danger' : 'panel-success' %>">
-              <div class="panel-heading"><%= item.time %></div>
+            <div class="panel <%= item.type === -1 ? 'panel-danger' : 'panel-success' %>">
+              <div class="panel-heading"><%= moment(item.time).format('YYYY-MM-DD') %></div>
               <div class="panel-body">
                 <div class="col-xs-6"><%= item.title %></div>
                 <div class="col-xs-2 text-center">
-                  <span class="label <%= item.type ==='-1' ? 'label-warning' : 'label-success' %>"><%= item.type ==="-1" ? "Expense" : "Income"%></span>
+                  <span class="label <%= item.type === -1 ? 'label-warning' : 'label-success' %>"><%= item.type === -1 ? "Expense" : "Income"%></span>
                 </div>
                 <div class="col-xs-2 text-right">$<%= item.amount%></div>
                 <div class="col-xs-2 text-right">
-                    <a href="/account/<%= item.id%>">
+                    <a class="delete" href="/account/<%= item._id%>">
                   <span
                     class="glyphicon glyphicon-remove"
                     aria-hidden="true"
@@ -49,9 +49,25 @@
             </div>
             <% }) %>
             <a href="/account/create"><button>Add new Event</button></a>
+            <form method="post" action="/logout">
+              <div class="row text-right"><button class="btn btn-danger">Log out</button></div>
+            </form>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      var de = document.querySelectorAll(".delete")
+      de.forEach(item=>{
+        item.addEventListener('click', function(e){
+          if(confirm("Really want to delete it??")){
+            return true
+          } else{
+            e.preventDefault()
+          }
+        })
+      })
+    </script>
   </body>
+  
 </html>
